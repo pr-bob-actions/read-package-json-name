@@ -2,8 +2,8 @@ import { appendFileSync } from 'fs';
 import { resolve, join } from 'path';
 
 export async function run() {
-  const input_workingDir = process.env.INPUTS_WORKING_DIR;
-  const input_path = process.env.INPUTS_PATH;
+  const input_workingDir = process.env.INPUT_WORKING_DIR;
+  const input_path = process.env.INPUT_PATH;
 
   const fullPath = buildPath(input_workingDir, input_path);
 
