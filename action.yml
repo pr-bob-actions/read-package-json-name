@@ -1,0 +1,14 @@
+name: Read package.json name
+description: Extract package name and namespace from package.json
+
+inputs:
+  working-dir:
+    description: Working directory where package.json is located
+    required: false
+  path:
+    description: Path to the package.json file
+    required: false
+
+runs:
+  using: node16
+  main: dist/index.js
