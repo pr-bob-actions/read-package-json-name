@@ -2,7 +2,7 @@ name: Read package.json name
 description: Extract package name and namespace from package.json
 
 inputs:
-  working-dir:
+  workingDir:
     description: Working directory where package.json is located
     required: false
   path:

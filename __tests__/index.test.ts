@@ -70,7 +70,7 @@ describe('e2e Tests', () => {
   });
 
   test.each(e2eTestSet)('%#', async (wb, path, packageJSON, expected) => {
-    process.env.INPUT_WORKING_DIR = wb ?? '';
+    process.env.INPUT_WORKINGDIR = wb ?? '';
     process.env.INPUT_PATH = path ?? '';
     jest.mock(buildPath(wb, path), () => packageJSON, { virtual: true });
 
