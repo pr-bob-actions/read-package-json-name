@@ -38,8 +38,8 @@ const path_1 = require("path");
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
-        const input_workingDir = process.env.INPUTS_WORKING_DIR;
-        const input_path = process.env.INPUTS_PATH;
+        const input_workingDir = process.env.INPUT_WORKING_DIR;
+        const input_path = process.env.INPUT_PATH;
         const fullPath = buildPath(input_workingDir, input_path);
         const packageJson = yield (_a = fullPath, Promise.resolve().then(() => __importStar(require(_a))));
         const data = extractName(packageJson);
