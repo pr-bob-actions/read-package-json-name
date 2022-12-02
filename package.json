@@ -16,6 +16,7 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "format:check": "prettier -c ./src ./__tests__",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "build": "tsc"
   }
 }
